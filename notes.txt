@@ -28,10 +28,10 @@ B 26 .... 50
 C 51 .... 75
 D 76 .... 100
 
-ABC -> data1    D  -> target1
-ABD -> data1    C  -> target1
-ACD -> data1    B  -> target1
-BCD -> data1    A  -> target1
+ABC -> dataset1    D  -> dataset2
+ABD -> dataset1    C  -> dataset2
+ACD -> dataset1    B  -> dataset2
+BCD -> dataset1    A  -> dataset2
 
 K-fold 
 
