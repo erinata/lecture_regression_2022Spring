@@ -1,0 +1,40 @@
+
+
+      dataset (100)              real world  (50)
+      
+      data  (100)                  new_data  (50)
+      
+      target  (100)              new_target  (50)
+
+
+===============================================
+
+
+      dataset1 (75)              dataset2     (25)          
+      
+      data1    (75)               data2       (25) 
+      
+      target1  (75)               target2     (25) 
+
+
+
+===================================
+
+
+1 2 3 4 5 6 ........  100
+
+A 1 .... 25    
+B 26 .... 50
+C 51 .... 75
+D 76 .... 100
+
+ABC -> data1    D  -> target1
+ABD -> data1    C  -> target1
+ACD -> data1    B  -> target1
+BCD -> data1    A  -> target1
+
+K-fold 
+
+
+
+
