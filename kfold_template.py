@@ -21,6 +21,7 @@ def run_kfold(data, target, split_number, machine, use_accuracy=0, use_confusion
 		target_test = target[test_index]
 		# machine = linear_model.LinearRegression()
 		machine.fit(data_training, target_training)	
+		# print(machine.score(data_training, target_training))
 		new_target = machine.predict(data_test)
 		results_r2.append(metrics.r2_score(target_test, new_target))
 		if use_accuracy == 1:
@@ -28,7 +29,7 @@ def run_kfold(data, target, split_number, machine, use_accuracy=0, use_confusion
 		if use_confusion == 1:
 			results_confusion.append(metrics.confusion_matrix(target_test, new_target))
 	return results_r2, results_accuracy, results_confusion
-	
+
 
 if __name__ == '__main__':
 	dataset = pandas.read_csv("dataset.csv")
